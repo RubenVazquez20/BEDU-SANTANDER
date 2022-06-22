@@ -138,3 +138,100 @@ li {
     right: 0;
     background-color: #fffbf7;
   }
+
+  .features {
+    display: grid;
+    /* grid-template-columns: repeat(2, 300px); 2 columnas de 300 px c/u
+    grid-template-columns: repeat(2, 1fr); */
+    height: 660px;
+    /* grid-template-rows: repeat(2, 330px); */
+    grid-template:repeat(2, 1fr) / repeat(2, 1fr);
+    background-color: #025157;
+    grid-column-gap:2%;
+    grid-row-gap: 1em;
+}
+
+  .art1 {
+    background-color: #ffffff;
+    width: 80%;
+    height: 90%;
+    margin: auto 2% auto auto;
+  }
+
+  .art2 {
+    background-color: #ffffff;
+    width: 80%;
+    height: 90%;
+    /* text-align: center; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto auto auto 2%;
+  }
+
+  .art3{
+    background-color: #ffffff;
+    width: 80%;
+    height: 90%;
+    /* text-align: center; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto 2% auto auto;
+  }
+
+
+  .art4{
+    background-color: #ffffff;
+    width: 80%;
+    height: 90%;
+    /* text-align: center; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto auto auto 2%;
+  }
+
+
+  /* Icono de tarjetas */
+  .ico{
+    width: 10%;
+    margin: 5% 0 2% 10%;
+  }
+
+  .izq .text{
+    margin: 20% 0 25% 10%;
+  }
+
+  .izq .par{
+    margin: 8% 0 8% 5%;
+    font-size: 14px;
+    color: #343434;
+    font-weight: 200;
+  }
+
+  .izq .a{
+    margin: 30% 0 0 5%;
+    font-size: small;
+    text-decoration: none;
+  }
+
+
+  .izq{
+    width: 70%;
+    height: 100%;
+    float: left;
+  }
+
+  .der{
+    width: 30%;
+    height: 100%;
+    float: right;
+  }
+
+  .izq .text{
+    margin: 0 0 2% 5%;
+  }
+  .der img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .
