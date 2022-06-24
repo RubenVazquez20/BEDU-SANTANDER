@@ -7,17 +7,29 @@ body {
     background-color: #fffbf7;
 }
 
+.nav-item{
+  margin: 0 40px;
+  display: inline;
+}
+
 .title {
+    margin: 4% 0;
     text-align: center;
     color: #025157;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: 50px;
 }
 
+.der > img {
+  border-radius: 0 5% 5% 0;
+}
+
 p{
     color: #8b8b8bcc;
     font-family: Verdana;
     font-size: 20px;
+    text-align: center;
+    margin: 2% 0;
 }
 
 .btn{
@@ -94,6 +106,7 @@ li {
 
 .img {
     width: 40%;
+    margin: 5% 0 5% 0;
 }
 
 
@@ -127,7 +140,7 @@ li {
   .promo {
     display: flex;
     width: 70%;
-    margin: 100px auto;
+    margin: 5% auto;
     align-items: center;
   }
 
@@ -162,9 +175,6 @@ li {
     background-color: #ffffff;
     width: 80%;
     height: 90%;
-    /* text-align: center; */
-    /* margin-left: auto;
-    margin-right: auto; */
     margin: auto auto auto 2%;
   }
 
@@ -172,9 +182,6 @@ li {
     background-color: #ffffff;
     width: 80%;
     height: 90%;
-    /* text-align: center; */
-    /* margin-left: auto;
-    margin-right: auto; */
     margin: auto 2% auto auto;
   }
 
@@ -183,9 +190,6 @@ li {
     background-color: #ffffff;
     width: 80%;
     height: 90%;
-    /* text-align: center; */
-    /* margin-left: auto;
-    margin-right: auto; */
     margin: auto auto auto 2%;
   }
 
@@ -229,9 +233,110 @@ li {
   .izq .text{
     margin: 0 0 2% 5%;
   }
+
   .der img{
     width: 100%;
     height: 100%;
   }
 
-  .
+
+  /* Dispositivos pequeños en vista lanscape */
+  @media (max-width: 575px){
+    .navbar,
+    .actions {
+      display: none;
+    }
+
+    .title {
+      font-size: 30px;
+    }
+
+    .img {
+      width: 100%;
+    }
+
+    .publish > form{
+      flex-direction: column;
+    }
+
+    .publish > form > div{
+      height: 50px;
+      margin-top: 10px;
+    }
+
+    .publish > form > div > input{
+      width: 65%;
+    }
+
+    .promo {
+      flex-direction: column;
+      max-width: 90%;
+    }
+
+    .explanatory_video {
+      width: 100%;
+    }
+
+    .publish {
+      margin: 5% 0 8% 0;
+      text-align: center;
+    }
+
+    .publish > h3 {
+      font-size: 25px;
+      line-height: 1.2;
+    }
+
+    p{
+      font-size: 14px;
+    }
+
+    .features {
+      display: grid;
+      /* grid-template-columns: repeat(2, 300px); 2 columnas de 300 px c/u
+      grid-template-columns: repeat(2, 1fr); */
+      height: 1320px;
+      /* grid-template-rows: repeat(2, 330px); */
+      grid-template:repeat(4, 1fr) / repeat(1, 1fr);
+      background-color: #025157;
+      grid-column-gap:2%;
+      grid-row-gap: 1em;
+    }
+
+    .art1{
+      margin: auto auto;
+      border-radius: 5%;
+    }
+
+    .art2 {
+      margin:auto auto;
+    }
+
+    .art3{
+      margin: auto auto;
+    }
+
+    .art4 {
+      margin: auto auto;
+    }
+
+    .izq .text{
+      margin: 12% 0 8% 2%;
+      text-align: center;
+    }
+  
+    .izq .par{
+      margin: 3% 0 8% 10%;
+      font-size: 12px;
+      color: #343434;
+      font-weight: 200;
+      text-align: justify;
+    }
+
+    .izq .a{
+      margin: 30% 0 0 10%;
+      font-size: small;
+      text-decoration: none;
+    }
+
+  }
